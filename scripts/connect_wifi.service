@@ -1,0 +1,9 @@
+[Unit]
+Description=Connect Wifi
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh /home/pi/workspace/rpi_stuff/scripts/connect_network.sh
+
+[Install]
+WantedBy=multi-user.target
