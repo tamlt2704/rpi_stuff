@@ -1,0 +1,11 @@
+[Unit]
+Description=Start slackbot
+
+[Service]
+Type=simple
+Restart=on-failure
+ExecStart=/bin/sh /home/pi/workspace/rpi_stuff/scripts/start_slackbot.sh
+RestartSec=15s
+
+[Install]
+WantedBy=multi-user.target

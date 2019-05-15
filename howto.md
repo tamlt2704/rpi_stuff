@@ -6,3 +6,7 @@ systemctl enable ssh
 vim /etc/default/keyboard
 
 Change XKBLAYOUT -> "US"
+
+3. Enable service
+
+systemctl enable service-file
