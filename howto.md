@@ -10,3 +10,8 @@ Change XKBLAYOUT -> "US"
 3. Enable service
 
 systemctl enable service-file
+
+4. Connect external disk
+
+apt install ntfs-3g
+mount -t ntfs-3g /dev/sda1 /mnt/data
