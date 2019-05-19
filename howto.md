@@ -15,3 +15,6 @@ systemctl enable service-file
 
 apt install ntfs-3g
 mount -t ntfs-3g /dev/sda1 /mnt/data
+
+5. Set localtime
+sudo cp /usr/share/zoneinfo/Asisa/Singapore /etc/localtime
