@@ -3,9 +3,9 @@ Description=Start slackbot
 
 [Service]
 Type=simple
-Restart=on-failure
+Restart=always
 ExecStart=/bin/sh /home/pi/workspace/rpi_stuff/scripts/start_slackbot.sh
-RestartSec=15s
+RestartSec=5s
 
 [Install]
 WantedBy=multi-user.target

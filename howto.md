@@ -18,3 +18,10 @@ mount -t ntfs-3g /dev/sda1 /mnt/data
 
 5. Set localtime
 sudo cp /usr/share/zoneinfo/Asisa/Singapore /etc/localtime
+
+6. Set audio output
+
+amixer cset numid=3 2 
+
+# 2 : HDMI
+# 1: analogue (headphone)
